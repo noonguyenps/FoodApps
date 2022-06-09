@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/logo_foody" />
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên đăng nhập"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/imageView"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:layout_below="@id/etUsername"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:foregroundGravity="center"
+        android:text="Đăng nhập" />
+    <TextView
+        android:id="@+id/tw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nếu chưa có tài khoản. Hãy đăng kí !"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_below="@id/btnLogin"/>
+    <Button
+        android:id="@+id/btnGoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng kí"
+        android:typeface="monospace"
+        android:foregroundGravity="center"
+        android:layout_below="@id/tw1"/>
+</RelativeLayout>

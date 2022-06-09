@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoStoreActivity">
+
+    <TextView
+        android:id="@+id/storeNameInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten cua hang"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/storeImgInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/storeNameInInfo"
+        android:src="@drawable/trang" />
+    <TextView
+        android:id="@+id/storeAddressInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dia chi"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_below="@id/storeImgInInfo"/>
+    <TextView
+        android:id="@+id/tw001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách các món ăn"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textSize="22sp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/storeAddressInInfo"/>
+
+    <ListView
+        android:id="@+id/lwFoodInStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tw001"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"/>
+
+</RelativeLayout>
